@@ -1,0 +1,145 @@
+.tickets-plan-your-visit {
+    margin: 0 auto;
+    @include flexbox;
+
+    .tickets-title {
+        font-family: map-get($font-family, montserrat);
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .tickets-description {
+        font-family: map-get($font-family, montserrat);
+        color: map-get($colors, highlighting);
+        font-weight: 700;
+        font-size: 12px;
+        margin-top: -15px;
+        margin-bottom: 22px;
+    }
+
+    a.tablinks.active {
+        color: #000;
+    }
+
+    a.tablinks.active::after {
+        content: " ";
+        @include flexbox;
+        border-bottom: 5px solid map-get($colors, highlighting);
+        padding-top: 3px;
+    }
+
+    .tickets-date::after {
+        content: " ";
+        @include flexbox;
+        border-bottom: 2px solid #F4F5F2;
+        position: relative;
+        bottom: 18px;
+    }
+
+    ul.tab {
+        list-style-type: none;
+        @include flexbox;
+        justify-content: space-between;
+        padding: 0;
+
+    }
+
+    .tab li a {
+        font-family: map-get($font-family, montserrat);
+        display: inline-block;
+        color: #D4D4D4;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 500;
+        @include devices(mobile){
+            font-size: 18px;
+        }
+    }
+
+    .tickets-payment {
+        font-family: map-get($font-family, montserrat);
+        @include flexbox;
+
+        .tickets-payment-button {
+            @include button;
+            @include devices(mobile){
+                font-size: 12px;
+            }
+        }
+    }
+
+    .tickets-open-time {
+        font-family: map-get($font-family, montserrat);
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: -22px;
+        @include flexbox;
+    }
+
+    .tabs-category {
+        margin-top: 30px;
+    }
+
+    .tabs {
+        @include flexbox;
+        justify-content: space-between;
+
+        .tab-title {
+            font-family: map-get($font-family, montserrat);
+            font-size: 18px;
+            font-weight: 600;
+            @include devices(mobile){
+                font-size: 18px;
+            }
+            .tab-lable{
+               font-size: 12px;
+               color:#D4D4D4;
+               margin-top: -16px;
+            }
+        }
+
+        .tab-content {
+            @include flexbox;
+            justify-content: flex-end;
+            input[type="text"].active{
+                color: #000;
+            }
+            input[type="text"] {
+                font-family: map-get($font-family, montserrat);
+                font-size: 18px;
+                font-weight: 700;
+                color: #D4D4D4;
+                width: 10%;
+                border: none;
+                @include flexbox;
+                text-align: center;
+            }
+            .minus {
+                @include counter-button;
+            }
+
+            .plus {
+                @include counter-button;
+            }
+        }
+    }
+
+    .tickets-total {
+        margin-top: 45px;
+        border-top: 2px solid map-get($colors, highlighting);
+
+        .total {
+            @include flexbox;
+            justify-content: space-between;
+            margin: -14px 18px 0px 18px;
+        }
+
+        p {
+            font-family: map-get($font-family, montserrat);
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+/* HEADER */
+.top-menu-elements {
+    @include flexbox;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.top-menu-logo {
+    font-family: map-get($font-family, montserrat);
+    font-size: 15px;
+    @include devices(mobile){
+        font-size: 10px;
+    }
+}
+
+.top-menu-title {
+    @include text-style-header-title;
+    @include devices(mobile){
+        font-size: 18px;
+    }
+}
+.hamburger-menu-icon{
+    @include devices(mobile){
+       width: 18px;
+       height: 18px;
+    }
+}
+
+.slideout-sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -8px;
+    z-index: 2;
+    width: map-get($menu-width, width);
+    height: 100%;
+    padding: 20px;
+    background-color: map-get($colors, highlighting);
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    @include devices(mobile-small){
+        width: 228px;
+    }
+}
+
+.slideout-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slideout-sidebar ul li {
+    cursor: pointer;
+    padding: 18px 0;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    right: -60px;
+}
+
+.slideout-sidebar ul li a {
+    position: relative;
+    display: flex;
+    top: 29px;
+    right: 51px;
+}
+
+.search {
+    .search-input {
+        font-family: map-get($font-family, montserrat);
+        font-size: 18px;
+        font-weight: 700;
+        background: none;
+        padding: 10px;
+        border: 2px solid #fff;
+        width: 80%;
+    }
+
+    ::placeholder {
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .search-button {
+        border: none;
+        background: none;
+        margin-right: 11px;
+    }
+
+    .search-form {
+        @include flexbox;
+        justify-content: space-between;
+    }
+}

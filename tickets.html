@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mixins.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800&family=Questrial&display=swap"
+        rel="stylesheet">
+    <script src="js/offCanvasMenu.js"></script>
+    <title>tickets</title>
+</head>
+
+<body>
+    <header class="top-menu">
+        <div class="top-menu-elements">
+            <div>
+                <h2 class="top-menu-logo">THE<br> ART <br> MUSEUM</h2>
+            </div>
+            <div>
+                <h1 class="top-menu-title">Plan Your Visit</h1>
+            </div>
+            <div class="top-menu-offcanvas">
+                <div class="hamburger-menu" onclick="myFunction()">
+                    <svg class="hamburger-menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 50 50">
+                        <path
+                            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+                        </path>
+                    </svg>
+                </div>
+                <div id="sidebar" class="slideout-sidebar">
+                    <div class="search">
+                        <form action="" class="search-form">
+                            <button class="search-button">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.34315 14.6766C10.4673 17.8008 15.5327 17.8008 18.6569 14.6766C21.781 11.5524 21.781 6.48711 18.6569 3.36292C15.5327 0.238718 10.4673 0.238718 7.34315 3.36292C4.21895 6.48711 4.21895 11.5524 7.34315 14.6766ZM7.34315 14.6766L1.68629 20.3335"
+                                        stroke="#fff" stroke-width="2" stroke-linecap="square" />
+                                </svg>
+                            </button>
+                            <input type="search" placeholder="Search" class="search-input">
+                        </form>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a><svg width="26" height="28" viewBox="0 0 26 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.1855 8V3H19.6855M25.1855 8H19.6855M25.1855 8V12.5M1.18555 8V3H7.18555M1.18555 8H7.18555M1.18555 8V12.5M13.6855 8H19.6855M13.6855 8H7.18555M13.6855 8V12.5M13.6855 27H19.6855M13.6855 27H7.18555M13.6855 27V22M19.6855 8V12.5M19.6855 27H23.1855C24.2901 27 25.1855 26.1046 25.1855 25V22M19.6855 27V22M7.18555 8V12.5M7.18555 27H3.18555C2.08098 27 1.18555 26.1046 1.18555 25V22M7.18555 27V22M25.1855 17.5V12.5M25.1855 17.5V22M25.1855 17.5H19.6855M1.18555 17.5V12.5M1.18555 17.5V22M1.18555 17.5H7.18555M1.18555 12.5H7.18555M25.1855 12.5H19.6855M25.1855 22H19.6855M1.18555 22H7.18555M19.6855 5V3M19.6855 3V1M19.6855 3H7.18555M7.18555 3V1M7.18555 3V5M19.6855 12.5V17.5M19.6855 12.5H13.6855M19.6855 17.5V22M19.6855 17.5H13.6855M19.6855 22H13.6855M13.6855 22V17.5M13.6855 22H7.18555M13.6855 17.5V12.5M13.6855 17.5H7.18555M13.6855 12.5H7.18555M7.18555 12.5V17.5M7.18555 17.5V22"
+                                            stroke="white" stroke-linecap="square" />
+                                    </svg></a>Exhibition & Events</li>
+                            <li><a><svg width="26" height="24" viewBox="0 0 26 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.1855 19C20.5663 19 21.6855 17.8807 21.6855 16.5C21.6855 15.1193 20.5663 14 19.1855 14C17.8048 14 16.6855 15.1193 16.6855 16.5C16.6855 17.8807 17.8048 19 19.1855 19ZM19.1855 19C16.9764 19 15.1855 20.7909 15.1855 23H23.1855C23.1855 20.7909 21.3947 19 19.1855 19ZM10.1855 6.5C10.1855 8.98528 8.17083 11 5.68555 11C3.20027 11 1.18555 8.98528 1.18555 6.5C1.18555 4.01472 3.20027 2 5.68555 2C8.17083 2 10.1855 4.01472 10.1855 6.5ZM1.18555 14H10.1855V23H1.18555V14ZM19.1855 2L24.1855 11H14.1855L19.1855 2Z"
+                                            stroke="white" stroke-linecap="square" />
+                                    </svg>
+                                </a>Artist & Artworks</li>
+                            <li><a><svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1 4.25L8.5 1L16 4.25M1 4.25L8.5 8M1 4.25V14.75L8.5 18M8.5 8V18M8.5 8L16 4.25M8.5 18L16 14.75V4.25"
+                                            stroke="white" stroke-linecap="square" />
+                                    </svg>
+                                </a>Collection</li>
+                            <li><a href="collections.html"><svg width="26" height="16" viewBox="0 0 26 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.1855 15H25.1855V11.8705C23.4672 11.4218 22.199 9.85899 22.199 8C22.199 6.14101 23.4672 4.57821 25.1855 4.12951V1H13.1855M13.1855 15H1.18555V12.1176V12C3.39469 12 5.18555 10.2091 5.18555 8C5.18555 5.79086 3.39469 4 1.18555 4V1H13.1855M13.1855 15V13M13.1855 1V3M13.1855 5V7M13.1855 9V11"
+                                            stroke="white" stroke-linecap="square" />
+                                    </svg>
+                                </a>Plan Your Visit</li>
+                            <li><a href="tickets.html"><svg width="32" height="20" viewBox="0 0 32 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M27.1855 6.5H16.1855M27.1855 9.5H16.1855M27.1855 12.5H16.1855M8.68555 10C10.0663 10 11.1855 8.88071 11.1855 7.5C11.1855 6.11929 10.0663 5 8.68555 5C7.30483 5 6.18555 6.11929 6.18555 7.5C6.18555 8.88071 7.30483 10 8.68555 10ZM8.68555 10C6.47641 10 4.68555 11.7909 4.68555 14H12.6855C12.6855 11.7909 10.8947 10 8.68555 10ZM1.18555 1H31.1855V19H1.18555V1Z"
+                                            stroke="white" stroke-linecap="square" />
+                                    </svg>
+                                </a>Become a Member</li>
+                            <li><a><svg width="25" height="31" viewBox="0 0 25 31" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.5 7.99979C13.184 7.99979 12.1846 7.99979 12.5 7.99979Z"
+                                            fill="#DADADA" />
+                                        <path d="M12.5 7.99979C11.816 7.99979 12.8154 7.99979 12.5 7.99979Z"
+                                            fill="#DADADA" />
+                                        <path
+                                            d="M1 18.9998V29.9998H12.5M1 18.9998V7.99979H12.5M1 18.9998H12.5M24 18.9998V7.99979H12.5M24 18.9998V29.9998H12.5M24 18.9998H12.5M12.5 7.99979C13.5 3.49979 16.7449 -0.500208 19.1858 1.99979C21.658 4.53194 15.3753 7.84389 12.5 7.99979ZM12.5 7.99979C12.1846 7.99979 13.184 7.99979 12.5 7.99979ZM12.5 7.99979V18.9998M12.5 7.99979C11.5 3.49979 8.25505 -0.500208 5.81421 1.99979C3.34198 4.53194 9.62471 7.84389 12.5 7.99979ZM12.5 7.99979C12.8154 7.99979 11.816 7.99979 12.5 7.99979ZM12.5 29.9998V18.9998"
+                                            stroke="white" stroke-linecap="square" />
+                                    </svg>
+                                </a>Shop</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="tickets-plan-your-visit">
+        <div class="tickets-contents">
+            <div>
+                <h2 class="tickets-title">Skip the Line.<br>Purchase Tickets</h2>
+                <p class="tickets-description">All exhibitions, audio tours, and films<br>included in the price of
+                    admission.</p>
+            </div>
+            <div class="tickets-date">
+                <ul class="tab">
+                    <li><a href="#" class="tablinks">Today</a></li>
+                    <li><a href="#" class="tablinks active">Tomorrow</a></li>
+                    <li><a href="#" class="tablinks">Other</a></li>
+                </ul>
+            </div>
+            <div class="tickets-purchase">
+                <div class="tickets-purchase-day">
+                    <div></div>
+                </div>
+                <div class="tickets-purchase-day">
+                    <div class="tickets-open-time">
+                        <p><time datetime="2016-03-22">March 22, 2016<br></time>Open 10:30am-5:30pm</p>
+                    </div>
+                    <div class="tabs-category">
+                        <div class="tabs">
+                            <div class="tab-title">
+                                <p>Adults</p>
+                            </div>
+                            <div class="tab-content">
+                                <span class="minus">-</span>
+                                <input class="active" type="text" value="2" />
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab-title">
+                                <p>Seniors</p>
+                                <p class="tab-lable"><span>65</span> + with ID</p>
+                            </div>
+                            <div class="tab-content">
+                                <span class="minus">-</span>
+                                <input type="text" value="0" />
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+                        <div class="tabs">
+                            <div class="tab-title">
+                                <p>Students</p>
+                                <p class="tab-lable">with ID</p>
+                            </div>
+                            <div class="tab-content">
+                                <span class="minus">-</span>
+                                <input type="text" value="0" />
+                                <span class="plus">+</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tickets-purchase-day">
+                    <div></div>
+                </div>
+            </div>
+            <div class="tickets-total">
+                <div class="total">
+                    <p>Total</p>
+                    <p>$16</p>
+                </div>
+                <div class="tickets-payment"><button class="tickets-payment-button">Continue to Payment</button></div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+@mixin devices ($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width: 481px) {
+            @content;
+        }
+    }
+    @if $breakpoint == mobile-small {
+        @media (max-width: 380px) {
+            @content;
+        }
+    }
+}
+
+@mixin text-style-header-title {
+    font-family: map-get($font-family, montserrat);
+    color: map-get($colors, highlighting);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin button {
+    background-color: map-get($colors, highlighting);
+    font-family: map-get($font-family, montserrat);
+    color: #fff;
+    font-size: 15px;
+    width: 248px;
+    height: 42px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+@mixin counter-button {
+    border: 1px solid #D4D4D4;
+    @include flexbox;
+    width: 18px;
+    height: 18px;
+    color: #D4D4D4;
+}
+
+@import "variables";
+@import "collections";
+@import "tickets";
+@import "header";
+

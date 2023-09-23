@@ -1,0 +1,379 @@
+.tickets-collections {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tickets-collections .search-text {
+  text-align: left;
+  font-family: "Montserrat";
+  color: #FF473A;
+  font-weight: 600;
+}
+.tickets-collections .collections-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #FF473A;
+}
+.tickets-collections .collections-search .search-input {
+  border: none;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+}
+.tickets-collections .collections-search ::placeholder {
+  color: #FF473A;
+}
+.tickets-collections .collections-search .search-button {
+  border: none;
+  background: none;
+}
+.tickets-collections .collections-search .search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border: 2px solid #FF473A;
+  width: 300px;
+  padding: 10px;
+}
+@media (max-width: 380px) {
+  .tickets-collections .collections-search .search-form {
+    width: 258px;
+  }
+}
+.tickets-collections .collections-contens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 18px;
+  margin-top: 9px;
+}
+.tickets-collections .collections-contens img {
+  width: 100%;
+  height: auto;
+}
+.tickets-collections .collections-contens .collections-content p {
+  font-family: "Montserrat";
+  color: #FF473A;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 3px;
+}
+@media (max-width: 481px) {
+  .tickets-collections .collections-contens .collections-content p {
+    font-size: 12px;
+  }
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+}
+.test .search-input {
+  border: none;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+}
+.test ::placeholder {
+  color: #FF473A;
+}
+.test .search-button {
+  border: none;
+  background: none;
+}
+.test .search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border: 2px solid #FF473A;
+  width: 300px;
+  padding: 10px;
+}
+@media (max-width: 380px) {
+  .test .search-form {
+    width: 258px;
+  }
+}
+
+.tickets-plan-your-visit {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tickets-plan-your-visit .tickets-title {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+}
+.tickets-plan-your-visit .tickets-description {
+  font-family: "Montserrat";
+  color: #FF473A;
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-bottom: 22px;
+}
+.tickets-plan-your-visit a.tablinks.active {
+  color: #000;
+}
+.tickets-plan-your-visit a.tablinks.active::after {
+  content: " ";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 5px solid #FF473A;
+  padding-top: 3px;
+}
+.tickets-plan-your-visit .tickets-date::after {
+  content: " ";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #F4F5F2;
+  position: relative;
+  bottom: 18px;
+}
+.tickets-plan-your-visit ul.tab {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 0;
+}
+.tickets-plan-your-visit .tab li a {
+  font-family: "Montserrat";
+  display: inline-block;
+  color: #D4D4D4;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+}
+@media (max-width: 481px) {
+  .tickets-plan-your-visit .tab li a {
+    font-size: 18px;
+  }
+}
+.tickets-plan-your-visit .tickets-payment {
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tickets-plan-your-visit .tickets-payment .tickets-payment-button {
+  background-color: #FF473A;
+  font-family: "Montserrat";
+  color: #fff;
+  font-size: 15px;
+  width: 248px;
+  height: 42px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 481px) {
+  .tickets-plan-your-visit .tickets-payment .tickets-payment-button {
+    font-size: 12px;
+  }
+}
+.tickets-plan-your-visit .tickets-open-time {
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tickets-plan-your-visit .tabs-category {
+  margin-top: 30px;
+}
+.tickets-plan-your-visit .tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.tickets-plan-your-visit .tabs .tab-title {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 481px) {
+  .tickets-plan-your-visit .tabs .tab-title {
+    font-size: 18px;
+  }
+}
+.tickets-plan-your-visit .tabs .tab-title .tab-lable {
+  font-size: 12px;
+  color: #D4D4D4;
+  margin-top: -16px;
+}
+.tickets-plan-your-visit .tabs .tab-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-end;
+}
+.tickets-plan-your-visit .tabs .tab-content input[type=text].active {
+  color: #000;
+}
+.tickets-plan-your-visit .tabs .tab-content input[type=text] {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  color: #D4D4D4;
+  width: 10%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tickets-plan-your-visit .tabs .tab-content .minus {
+  border: 1px solid #D4D4D4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #D4D4D4;
+}
+.tickets-plan-your-visit .tabs .tab-content .plus {
+  border: 1px solid #D4D4D4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #D4D4D4;
+}
+.tickets-plan-your-visit .tickets-total {
+  margin-top: 45px;
+  border-top: 2px solid #FF473A;
+}
+.tickets-plan-your-visit .tickets-total .total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: -14px 18px 0px 18px;
+}
+.tickets-plan-your-visit .tickets-total p {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* HEADER */
+.top-menu-elements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.top-menu-logo {
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+@media (max-width: 481px) {
+  .top-menu-logo {
+    font-size: 10px;
+  }
+}
+
+.top-menu-title {
+  font-family: "Montserrat";
+  color: #FF473A;
+  font-size: 35px;
+  font-weight: 500;
+}
+@media (max-width: 481px) {
+  .top-menu-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 481px) {
+  .hamburger-menu-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.slideout-sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -8px;
+  z-index: 2;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  background-color: #FF473A;
+  box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 380px) {
+  .slideout-sidebar {
+    width: 228px;
+  }
+}
+
+.slideout-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideout-sidebar ul li {
+  cursor: pointer;
+  padding: 18px 0;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  right: -60px;
+}
+
+.slideout-sidebar ul li a {
+  position: relative;
+  display: flex;
+  top: 29px;
+  right: 51px;
+}
+
+.search .search-input {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  background: none;
+  padding: 10px;
+  border: 2px solid #fff;
+  width: 80%;
+}
+.search ::placeholder {
+  color: #fff;
+  font-weight: 400;
+}
+.search .search-button {
+  border: none;
+  background: none;
+  margin-right: 11px;
+}
+.search .search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=mixins.css.map */

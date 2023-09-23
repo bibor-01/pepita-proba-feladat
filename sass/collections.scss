@@ -1,0 +1,106 @@
+.tickets-collections {
+    margin: 0 auto;
+    @include flexbox;
+
+    .search-text {
+        text-align: left;
+        font-family: map-get($font-family, montserrat);
+        color: map-get($colors, highlighting);
+        font-weight: 600;
+    }
+
+    .collections-search {
+        @include flexbox;
+        font-size: 12px;
+        color: map-get($colors, highlighting);
+
+
+        .search-input {
+            border: none;
+            font-family: map-get($font-family, montserrat);
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        ::placeholder {
+            color: map-get($colors, highlighting);
+        }
+
+        .search-button {
+            border: none;
+            background: none;
+        }
+
+        .search-form {
+            @include flexbox;
+            justify-content: space-between;
+            border: 2px solid map-get($colors, highlighting);
+            width: 300px;
+            padding: 10px;
+
+            @include devices(mobile-small) {
+                width: 258px;
+            }
+        }
+    }
+
+    .collections-contens {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 50px 18px;
+        margin-top: 9px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .collections-content p {
+            font-family: map-get($font-family, montserrat);
+            color: map-get($colors, highlighting);
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 3px;
+
+            @include devices(mobile) {
+                font-size: 12px;
+
+            }
+        }
+
+    }
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+
+    .search-input {
+        border: none;
+        font-family: map-get($font-family, montserrat);
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    ::placeholder {
+        color: map-get($colors, highlighting);
+    }
+
+    .search-button {
+        border: none;
+        background: none;
+    }
+
+    .search-form {
+        @include flexbox;
+        justify-content: space-between;
+        border: 2px solid map-get($colors, highlighting);
+        width: 300px;
+        padding: 10px;
+
+        @include devices(mobile-small) {
+            width: 258px;
+        }
+    }
+}
